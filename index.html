@@ -13,7 +13,6 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
@@ -27,11 +26,11 @@
     let pwdResult;
 
     // Add your code here
-        if (machineActive === false) {
-            machineResult = "Machine Status = OFF";
-        } else if (machineActive === true) {
+        if (machineActive) {
             machineResult = "Machine Status = ON";
-            pwd === "cheese" ? pwdResult = "Login attempt was successful!" : pwdResult = "Login attempt unsuccessful."
+            pwdResult = pwd === "cheese" ? "Login attempt was successful!" : "Login attempt unsuccessful."
+        } else {
+            machineResult = "Machine Status = OFF";
         }
 
     // Don't edit the code below here!

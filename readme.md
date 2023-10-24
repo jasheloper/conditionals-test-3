@@ -31,10 +31,18 @@ If the machine is on, we also want a second conditional to run that checks wheth
 ## My Solution
 
 ```
-        if (machineActive === false) {
-            machineResult = "Machine Status = OFF";
-        } else if (machineActive === true) {
+    let machineActive = true;
+    let pwd = "cheese";
+
+    let machineResult;
+    let pwdResult;
+
+    // Add your code here
+    
+        if (machineActive) {
             machineResult = "Machine Status = ON";
-            pwd === "cheese" ? pwdResult = "Login attempt was successful!" : pwdResult = "Login attempt unsuccessful."
+            pwdResult = pwd === "cheese" ? "Login attempt was successful!" : "Login attempt unsuccessful."
+        } else {
+            machineResult = "Machine Status = OFF";
         }
 ```
