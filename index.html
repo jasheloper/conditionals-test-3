@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Conditionals: Task 3</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
 
-    <script>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
 
-        let machineActive = true;
-        let pwd = 'cheese';
+  <body>
+    <section class="preview"></section>
+  </body>
+  <script>
+    let machineActive = true;
+    let pwd = "cheese";
 
-        let machineResult;
-        let pwdResult;
+    let machineResult;
+    let pwdResult;
 
-        // Add your code here
+    // Add your code here
+        if (machineActive === false) {
+            machineResult = "Machine Status = OFF";
+        } else if (machineActive === true) {
+            machineResult = "Machine Status = ON";
+            pwd === "cheese" ? pwdResult = "Login attempt was successful!" : pwdResult = "Login attempt unsuccessful."
+        }
 
-        // Don't edit the code below here!
+    // Don't edit the code below here!
 
-        section.innerHTML = ' ';
-        let para1 = document.createElement('p');
-        let para2 = document.createElement('p');
+    const section = document.querySelector("section");
 
-        para1.textContent = machineResult;
-        para2.textContent = pwdResult;
+    let para1 = document.createElement("p");
+    let para2 = document.createElement("p");
 
-        section.appendChild(para1);
-        section.appendChild(para2);
-    
-    </script>
-    
-</body>
+    para1.textContent = machineResult;
+    para2.textContent = pwdResult;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
 </html>
