@@ -26,3 +26,13 @@ If the machine is on, we also want a second conditional to run that checks wheth
 - If so, it should assign a string to `pwdResult` telling the user they logged in successfully. 
 - If not, it should assign a different string to `pwdResult` telling the user their login attempt was not successful. We'd like you to do this in a single line, using something that isn't an `if...else` structure.
 
+<br>
+
+```
+        if (machineActive === false) {
+            machineResult = "Machine Status = OFF";
+        } else if (machineActive === true) {
+            machineResult = "Machine Status = ON";
+            pwd === "cheese" ? pwdResult = "Login attempt was successful!" : pwdResult = "Login attempt unsuccessful."
+        }
+```
