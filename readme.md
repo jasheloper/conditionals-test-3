@@ -28,6 +28,8 @@ If the machine is on, we also want a second conditional to run that checks wheth
 
 <br>
 
+## My Solution
+
 ```
         if (machineActive === false) {
             machineResult = "Machine Status = OFF";
